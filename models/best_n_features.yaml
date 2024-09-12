@@ -1,0 +1,12 @@
+DBSCAN:
+  n_princ_comp: 2
+GMM:
+  n_princ_comp: 2
+IForest:
+  n_princ_comp: 70
+KMeans:
+  n_princ_comp: 3
+LOF:
+  n_princ_comp: 3
+nuSVM:
+  n_princ_comp: 2

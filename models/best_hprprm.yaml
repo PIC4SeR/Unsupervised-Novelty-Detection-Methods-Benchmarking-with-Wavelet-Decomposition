@@ -1,0 +1,66 @@
+DBSCAN:
+  augmented:
+    batch_size: 32
+    latent: 85
+    lr: 0.02
+    midlay: 75
+  reduced:
+    batch_size: 64
+    latent: 10
+    lr: 0.08
+    midlay: 56
+GMM:
+  augmented:
+    batch_size: 32
+    latent: 85
+    lr: 0.08
+    midlay: 79
+  reduced:
+    batch_size: 64
+    latent: 10
+    lr: 0.01
+    midlay: 61
+IForest:
+  augmented:
+    batch_size: 64
+    latent: 85
+    lr: 0.02
+    midlay: 79
+  reduced:
+    batch_size: 64
+    latent: 45
+    lr: 0.03
+    midlay: 50
+KMeans:
+  augmented:
+    batch_size: 64
+    latent: 85
+    lr: 0.08
+    midlay: 80
+  reduced:
+    batch_size: 64
+    latent: 32
+    lr: 0.03
+    midlay: 61
+LOF:
+  augmented:
+    batch_size: 32
+    latent: 88
+    lr: 0.03
+    midlay: 79
+  reduced:
+    batch_size: 32
+    latent: 10
+    lr: 0.01
+    midlay: 50
+nuSVM:
+  augmented:
+    batch_size: 32
+    latent: 93
+    lr: 0.09
+    midlay: 80
+  reduced:
+    batch_size: 64
+    latent: 10
+    lr: 0.1
+    midlay: 65

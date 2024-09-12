@@ -1,0 +1,30 @@
+DBSCAN:
+  batch_size: 32
+  latent: 85
+  lr: 0.02
+  midlay: 75
+GMM:
+  batch_size: 32
+  latent: 85
+  lr: 0.08
+  midlay: 79
+IForest:
+  batch_size: 64
+  latent: 85
+  lr: 0.02
+  midlay: 79
+KMeans:
+  batch_size: 64
+  latent: 85
+  lr: 0.08
+  midlay: 80
+LOF:
+  batch_size: 32
+  latent: 88
+  lr: 0.03
+  midlay: 79
+nuSVM:
+  batch_size: 32
+  latent: 93
+  lr: 0.09
+  midlay: 80

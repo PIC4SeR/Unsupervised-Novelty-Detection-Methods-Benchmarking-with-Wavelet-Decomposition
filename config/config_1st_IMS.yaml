@@ -1,0 +1,80 @@
+Sensors:          # Expected sensors in the database
+  Bearing 1 x:    # Sensor 1 name
+    features:     # Features configuration
+      wavPowers:    on                          # Wavelet powers
+      mean:         on                          # Mean value
+      rms:          on                          # Root mean square
+      peak:         on                          # Peak to peak value
+      std:          on                          # Standard deviation
+      skew:         on                          # Skewness
+      kurt:         on                          # Kurtosis
+  Bearing 1 y:    # Sensor 2 name
+    features:     # Features configuration
+      wavPowers:    on                          # Wavelet powers
+      mean:         on                          # Mean value
+      rms:          on                          # Root mean square
+      peak:         on                          # Peak to peak value
+      std:          on                          # Standard deviation
+      skew:         on                          # Skewness
+      kurt:         on                          # Kurtosis
+  Bearing 2 x:    # Sensor 3 name
+    features:     # Features configuration
+      wavPowers:    on                          # Wavelet powers
+      mean:         on                          # Mean value
+      rms:          on                          # Root mean square
+      peak:         on                          # Peak to peak value
+      std:          on                          # Standard deviation
+      skew:         on                          # Skewness
+      kurt:         on                          # Kurtosis
+  Bearing 2 y:    # Sensor 3 name
+    features:     # Features configuration
+      wavPowers:    on                          # Wavelet powers
+      mean:         on                          # Mean value
+      rms:          on                          # Root mean square
+      peak:         on                          # Peak to peak value
+      std:          on                          # Standard deviation
+      skew:         on                          # Skewness
+      kurt:         on                          # Kurtosis
+  Bearing 3 x:    # Sensor 3 name
+    features:     # Features configuration
+      wavPowers:    on                          # Wavelet powers
+      mean:         on                          # Mean value
+      rms:          on                          # Root mean square
+      peak:         on                          # Peak to peak value
+      std:          on                          # Standard deviation
+      skew:         on                          # Skewness
+      kurt:         on                          # Kurtosis
+  Bearing 3 y:    # Sensor 3 name
+    features:     # Features configuration
+      wavPowers:    on                          # Wavelet powers
+      mean:         on                          # Mean value
+      rms:          on                          # Root mean square
+      peak:         on                          # Peak to peak value
+      std:          on                          # Standard deviation
+      skew:         on                          # Skewness
+      kurt:         on                          # Kurtosis
+  Bearing 4 x:    # Sensor 3 name
+    features:     # Features configuration
+      wavPowers:    on                          # Wavelet powers
+      mean:         on                          # Mean value
+      rms:          on                          # Root mean square
+      peak:         on                          # Peak to peak value
+      std:          on                          # Standard deviation
+      skew:         on                          # Skewness
+      kurt:         on                          # Kurtosis
+  Bearing 4 y:    # Sensor 3 name
+    features:     # Features configuration
+      wavPowers:    on                          # Wavelet powers
+      mean:         on                          # Mean value
+      rms:          on                          # Root mean square
+      peak:         on                          # Peak to peak value
+      std:          on                          # Standard deviation
+      skew:         on                          # Skewness
+      kurt:         on                          # Kurtosis
+wavelet:           # Wavelet packet reasform configuration
+  type:               db10                        # Type of wavelet to use
+  mode:               symmetric                   # Mode of the packet transform
+  maxlevel:           6                           # Max level -> num of features = 2^level
+
+miscellanea:
+  logpath:            logs/demo.log                           # Path to the logs

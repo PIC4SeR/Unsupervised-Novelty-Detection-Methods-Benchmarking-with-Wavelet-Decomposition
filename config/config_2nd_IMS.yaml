@@ -1,0 +1,56 @@
+Database:           # Database configuration
+  db:                 Framework                         # Database name
+  collection:       # Collection configuration
+    back:             BACKUP                      # Backup collection name
+    raw:              RAW                         # Raw data collection name
+    unconsumed:       UNCONSUMED                  # Unconsumed data collection name
+    healthy:          HEALTHY                     # Healthy data collection name
+    healthy_train:    HEALTHY_TRAIN               # Healthy data collection name for training (some healthy data are not used if not novelty)
+    quarantined:      QUARANTINED                 # Quarantined data collection name
+    faulty:           FAULTY                      # Faulty data collection name
+    faulty_train:     FAULTY_TRAIN                # Faulty data collection name for training (some faulty data are not used if not fault novelty)
+    models:           MODELS                      # Models collection name
+Sensors:          # Expected sensors in the database
+  Bearing 1:    # Sensor 1 name
+    features:     # Features configuration
+      wavPowers:    on                          # Wavelet powers
+      mean:         on                          # Mean value
+      rms:          on                          # Root mean square
+      peak:         on                          # Peak to peak value
+      std:          on                          # Standard deviation
+      skew:         on                          # Skewness
+      kurt:         on                          # Kurtosis
+  Bearing 2:    # Sensor 2 name
+    features:     # Features configuration
+      wavPowers:    on                          # Wavelet powers
+      mean:         on                          # Mean value
+      rms:          on                          # Root mean square
+      peak:         on                          # Peak to peak value
+      std:          on                          # Standard deviation
+      skew:         on                          # Skewness
+      kurt:         on                          # Kurtosis
+  Bearing 3:    # Sensor 3 name
+    features:     # Features configuration
+      wavPowers:    on                          # Wavelet powers
+      mean:         on                          # Mean value
+      rms:          on                          # Root mean square
+      peak:         on                          # Peak to peak value
+      std:          on                          # Standard deviation
+      skew:         on                          # Skewness
+      kurt:         on                          # Kurtosis
+  Bearing 4:    # Sensor 4 name
+    features:     # Features configuration
+      wavPowers:    on                          # Wavelet powers
+      mean:         on                          # Mean value
+      rms:          on                          # Root mean square
+      peak:         on                          # Peak to peak value
+      std:          on                          # Standard deviation
+      skew:         on                          # Skewness
+      kurt:         on                          # Kurtosis
+wavelet:           # Wavelet packet reasform configuration
+  type:               db10                        # Type of wavelet to use
+  mode:               symmetric                   # Mode of the packet transform
+  maxlevel:           6                           # Max level -> num of features = 2^level
+
+miscellanea:
+  logpath:            logs/demo.log        # Path to the logs
