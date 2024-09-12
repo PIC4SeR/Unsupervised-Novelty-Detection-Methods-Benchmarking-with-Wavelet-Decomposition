@@ -3,7 +3,6 @@
 # %%************************************************************************************************* #
 import yaml, os, pymongo, logging, numpy as np, optuna, torch, warnings, pandas as pd
 import matplotlib as mpl
-mpl.use('Qt5Agg') # use the Qt5Agg backend
 import matplotlib.pyplot as plt
 from optuna.exceptions import ExperimentalWarning
 from sklearn.preprocessing import StandardScaler
@@ -551,9 +550,4 @@ fig.set_size_inches(figsize)
 ax.axis('off')
 # print the table.tex file
 ax.text(0, 0, open(os.path.join('results','table.tex')).read())
-
-
-
-
-
-plt.show()
+plt.savefig(os.path.join('results','Table.pdf'))
