@@ -548,6 +548,7 @@ plt.savefig(os.path.join('results','Correlation.pdf'))
 fig, ax = plt.subplots()
 fig.set_size_inches(figsize)
 ax.axis('off')
-# print the table.tex file
-ax.text(0, 0, open(os.path.join('results','table.tex')).read())
-plt.savefig(os.path.join('results','Table.pdf'))
+
+# # print the table.tex file
+# ax.text(0, 0, open(os.path.join('results','table.tex')).read())
+# plt.savefig(os.path.join('results','Table.pdf'))
