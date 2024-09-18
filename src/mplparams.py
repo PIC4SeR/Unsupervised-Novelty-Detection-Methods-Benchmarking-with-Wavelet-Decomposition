@@ -23,5 +23,7 @@ def set_matplotlib_params():
     plt.rcParams['ytick.major.width'] = 0.8
 
     plt.rcParams['text.usetex'] = True
-    plt.rcParams['text.latex.preamble'] = r'\usepackage{amsmath}'
-    plt.rcParams['text.latex.preamble'] = r'\usepackage{multirow}'
+    plt.rcParams['text.latex.preamble'] = r'\usepackage{amsmath,booktabs,amsmath,amssymb,amsfonts,multirow,type1cm}'
+    plt.rcParams['text.latex.preamble'] = r'\usepackage[utf8]{inputenc}'
+    plt.rcParams['text.latex.preamble'] = r'\usepackage[exponent-product=\cdot]'
+    plt.rcParams['text.latex.preamble'] = r'\usepackage[strings]{underscore}'

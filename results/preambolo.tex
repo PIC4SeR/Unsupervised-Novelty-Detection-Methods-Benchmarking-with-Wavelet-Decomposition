@@ -1,23 +1,8 @@
 \begingroup
-\setlength{\tabcolsep}{4pt}
-\renewcommand{\arraystretch}{1.3} % Default value: 1
 \begin{table*}
     \centering
-    \caption{Performance metrics for all the preprocessing and model combinations.
-    OF means original features, AER means autoencoder reduced, AEA means autoencoder augmented.
-    $n_f$ is the number of features transformed by the autoencoders or PCA. 
-    FP is the features percentage with respect to the original dimension.
-    Variance defined in the Equation \ref{eq:variance}, and the reactivity defined in Equation \ref{eq:react}.
-    Train signal is set 1 of Table \ref{tab:dataset} and test signal is set 5.
-    The symbols $\Downarrow$ and $\Uparrow$ indicate if the value should ideally be minimized or maximized, respectively. The best results among all the UML models and features transformation combinations are highlighted with *, for each metric.}
-    \label{tab:shak_results}
     %% local settings
     \sisetup{detect-weight,mode=text}
-    % for avoiding siunitx using bold extended
-    \renewrobustcmd{\bfseries}{\fontseries{b}\selectfont}
-    \renewrobustcmd{\boldmath}{}
-    % abbreviation
-    \newrobustcmd{\B}{\bfseries}
     \begin{tabular}{
       c
       c
@@ -30,22 +15,22 @@
       S[scientific-notation=fixed,table-format=3.1, round-mode = places, round-precision = 1, fixed-exponent=-6]
       } 
       \toprule
-      {\multirow{2}{*}{\textbf{UML model}}}
+      {\multirow{2}{*}{{UML model}}}
       &
-        {\multirow{2}{*}{\textbf{Transformation}}}
+        {\multirow{2}{*}{{Transformation}}}
       &
-        {\multirow{2}{*}{\textbf{$\mathbf{n_f}$}}}
+        {\multirow{2}{*}{{${n_f}$}}}
       &
-        {\multirow{2}{*}{\textbf{FP [\%]} $\Downarrow$}}
+        {\multirow{2}{*}{{FP [\%]} $\Downarrow$}}
       &
-        {\multirow{2}{*}{\textbf{Variance }[$10^{-3}$] $\Downarrow$}}
+        {\multirow{2}{*}{{Variance }[$10^{-3}$] $\Downarrow$}}
       &
-        \multicolumn{2}{c}{\textbf{Mean}}
+        \multicolumn{2}{c}{{Mean}}
       &
-        {\multirow{2}{*}{\textbf{Reactivity }$\Uparrow$}}
+        {\multirow{2}{*}{{Reactivity }$\Uparrow$}}
       &
-        {\multirow{2}{*}{\textbf{Inference Time [}$\mu$\textbf{s] }$\Downarrow$}}
+        {\multirow{2}{*}{{Inference Time [}$\mu${s] }$\Downarrow$}}
       \\ 
       \cline{6-7}
-     & &  &  &  & {\textbf{\textit{Nominal signal }$\Downarrow$}} & {\textbf{\textit{Novelty Signal }$\Uparrow$}} &  &  \\ 
+     & &  &  &  & {{{Nominal signal }$\Downarrow$}} & {{{Novelty Signal }$\Uparrow$}} &  &  \\ 
       \hline
