@@ -2,10 +2,8 @@ FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update && apt install -y \
-    python3-pip python3-pyqt5 git python3-pyqt5.qtsvg python3-tk texlive-extra gnupg curl
+    python3-pip python3-pyqt5 git python3-pyqt5.qtsvg python3-tk texlive-latex-extra gnupg curl sudo dvipng texlive-fonts-recommended cm-super
 
-RUN apt-get update && \
-apt-get -y install sudo
 
 RUN curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | \
     sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg \
@@ -31,5 +29,3 @@ RUN pip install tensorflow pandas numpy matplotlib seaborn scikit-learn \
     sphinxcontrib-serializinghtml ssqueezepy stack-data tabulate threadpoolctl tikzplotlib \
     traitlets typer types-python-dateutil typing_extensions tzdata urllib3 virtualenv \
     wcwidth webcolors onnx onnxruntime optuna-dashboard
-
-RUN apt-get install dvipng texlive-latex-extra texlive-fonts-recommended cm-super
