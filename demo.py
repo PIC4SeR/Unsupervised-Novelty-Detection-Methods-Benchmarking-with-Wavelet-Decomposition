@@ -470,7 +470,7 @@ fig.legend([dot1, dot2, dot3, dot4], ['OF', 'AER', 'AEA', 'PCA'], loc='upper cen
            bbox_to_anchor=[0.49,1], ncol=4, borderaxespad=0.,frameon=False)
 fig.suptitle('Novelty metric for the different models',y=0.96,x=pos1[0]+pos1[2]/2,ha='center',va='top',fontsize=12)
 
-fig.savefig(os.path.join('results','Novelty_metric.pdf'))
+fig.savefig(os.path.join('results','Fig7.pdf'))
 
 # plot hystogram
 
@@ -529,7 +529,7 @@ fig.text(0.79, 0.02, 'IForest', ha='center', va='center', fontsize=9)
 fig.text(0.936, 0.02, 'LOF', ha='center', va='center', fontsize=9)
 fig.subplots_adjust(top=0.88,bottom=0.0625,left=0.1125,right=0.992,hspace=0.8)
 
-plt.savefig(os.path.join('results','Metrics.pdf'))
+plt.savefig(os.path.join('results','Fig5.pdf'))
 
 import seaborn as sns
 fig, ax = plt.subplots()
@@ -542,9 +542,4 @@ left=0.295,
 right=0.9,
 hspace=0.2,
 wspace=0.2)
-plt.savefig(os.path.join('results','Correlation.pdf'))
-
-# show the table plot
-fig, ax = plt.subplots()
-fig.set_size_inches(figsize)
-ax.axis('off')
+plt.savefig(os.path.join('results','Correlation_table.pdf'))
