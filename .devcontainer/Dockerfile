@@ -31,3 +31,5 @@ RUN pip install tensorflow pandas numpy matplotlib seaborn scikit-learn \
     sphinxcontrib-serializinghtml ssqueezepy stack-data tabulate threadpoolctl tikzplotlib \
     traitlets typer types-python-dateutil typing_extensions tzdata urllib3 virtualenv \
     wcwidth webcolors onnx onnxruntime optuna-dashboard
+
+RUN apt-get install dvipng texlive-latex-extra texlive-fonts-recommended cm-super
