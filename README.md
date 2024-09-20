@@ -47,6 +47,7 @@ Before starting, ensure you have the following installed:
    ```bash
    docker run -it -v $(pwd):/code --runtime=nvidia --gpus all undbwwd:latest
    ```
+   now the container should be running. Please don't exit and execute the following steps 6 to 12 inside the container.
 
 6. **Create Database Directory**: Set up a directory for MongoDB.
    ```bash
@@ -87,10 +88,10 @@ Before starting, ensure you have the following installed:
 
 14. **Open the Results**: Use a PDF viewer to open the results.
      ```bash
-     xdg-open Correlation_table.pdf
-     xdg-open Fig5.pdf
-     xdg-open Fig7.pdf
-     xdg-open table.pdf
+     xdg-open results/Correlation_table.pdf
+     xdg-open results/Fig5.pdf
+     xdg-open results/Fig7.pdf
+     xdg-open results/table.pdf
      ```
 
 ---
