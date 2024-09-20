@@ -22,3 +22,4 @@ def print_result_table(table: dict, preamble: str, out: str):
         f.write('\end{tabular}\n')
         f.write('\end{table*}\n')
         f.write('\endgroup\n')
+        f.write('\end{document}')

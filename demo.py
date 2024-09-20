@@ -396,7 +396,7 @@ for model in tqdm([mod_KMeans, mod_DBSCAN, mod_GMM, mod_nuSVM, mod_IF, mod_LOF],
 #                                  CPMPILE THE LATEX RESULTS                                          #
 # %%************************************************************************************************* #
 
-src.print_result_table(Results,os.path.join('results/preambolo.tex'),os.path.join('results/table.tex'))
+src.print_result_table(Results,os.path.join('src/preambolo.tex'),os.path.join('results/table.tex'))
 
 df_res = pd.concat({k: pd.DataFrame(v).T for k, v in Results.items()}, axis=0)
 
