@@ -96,3 +96,63 @@ Before starting, ensure you have the following installed:
 ---
 
 Follow these steps to set up the environment, run the project, and view the results.
+
+
+
+## Customizing Script Settings
+
+The `demo.py` script includes several configuration flags that allow you to customize its behavior. You can modify these settings to control which steps are executed when running the script.
+
+To change the script settings, open the `demo.py` file in a text editor and locate the following section:
+
+    load_timeseries_flag    = True	# if True, the timeseries are loaded to MongoDB
+    run_FA_flag             = True	# if True, the feature agent is run
+    train_flag              = False	# if True, the models are trained
+    NormalizeNovMetric      = True	# if True, the novelty metric is normalized
+    Generate_PCA            = False	# if True, the PCA models are generated
+    Optimize_Autoencoder    = False	# if True, the Autoencoder models are optimized
+    Fit_Autoencoder         = False	# if True, the Autoencoder models are fitted
+    plot_patches            = False	# if True, the variance is visualized as a patch in the plot
+
+### Configuration Flags Description
+
+-   **`load_timeseries_flag`**:
+    
+    -   **Purpose**: Loads the time series data into MongoDB.
+    -   **Set to `True`**: If you want to load the time series data. Useful for the initial setup.
+    -   **Set to `False`**: If the data is already loaded and you want to skip this step.
+-   **`run_FA_flag`**:
+    
+    -   **Purpose**: Executes the feature agent process.
+    -   **Set to `True`**: To run the FA, which is necessary for generating feature sets.
+    -   **Set to `False`**: To skip the FA process the features are already loded in the MongoDB database
+-   **`train_flag`**:
+    
+    -   **Purpose**: Trains the machine learning models used in the analysis.
+    -   **Set to `True`**: If you need to train the models from scratch.
+    -   **Set to `False`**: If you prefer to use pre-trained models.
+-   **`NormalizeNovMetric`**:
+    
+    -   **Purpose**: Normalizes the novelty metric for consistent scaling.
+    -   **Set to `True`**: To normalize the novelty scores.
+    -   **Set to `False`**: To use raw novelty scores without normalization.
+-   **`Generate_PCA`**:
+    
+    -   **Purpose**: Generates Principal Component Analysis (PCA) models.
+    -   **Set to `True`**: If you need to create PCA models for dimensionality reduction.
+    -   **Set to `False`**: If PCA models are already generated.
+-   **`Optimize_Autoencoder`**:
+    
+    -   **Purpose**: Optimizes the hyperparameters of Autoencoder models.
+    -   **Set to `True`**: To perform hyperparameter optimization on Autoencoders.
+    -   **Set to `False`**: To skip optimization and use existing parameters.
+-   **`Fit_Autoencoder`**:
+    
+    -   **Purpose**: Fits the Autoencoder models to the data.
+    -   **Set to `True`**: If you need to fit the Autoencoders after optimization.
+    -   **Set to `False`**: If the Autoencoders are already fitted.
+-   **`plot_patches`**:
+    
+    -   **Purpose**: Visualizes variance as patches in the generated plot.
+    -   **Set to `True`**: To include variance patches in your visualizations.
+    -   **Set to `False`**: To generate plots without variance patches.
