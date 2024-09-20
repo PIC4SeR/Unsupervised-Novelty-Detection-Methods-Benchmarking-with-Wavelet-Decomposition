@@ -2,9 +2,20 @@ FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update && apt install -y \
-    python3-pip python3-pyqt5 git python3-pyqt5.qtsvg python3-tk texlive-latex-extra gnupg curl sudo dvipng texlive-fonts-recommended cm-super
-
-
+    python3-pip \
+    python3-pyqt5 \
+    git \
+    python3-pyqt5.qtsvg \
+    python3-tk \
+    texlive-latex-extra \
+    gnupg \
+    curl \
+    sudo \
+    dvipng \
+    texlive-fonts-recommended \
+    cm-super \
+    texlive-science
+    
 RUN curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | \
     sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg \
     --dearmor
